@@ -32,6 +32,13 @@ h6 {
   margin: 0;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  color: #2b3541;
+}
+
 body {
   font: 400 18px "Montserrat";
   background: #fefcfe;
@@ -222,16 +229,12 @@ header {
   max-height: 690px;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 17px;
-  margin-bottom: 200px;
+  margin-bottom: 160px;
 }
 
 .upcoming-title {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 125%;
-  color: #2b3541;
 }
 
 .events-item {
@@ -334,3 +337,321 @@ header {
   background: #2b3541;
   box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
 }
+
+.workout {
+  display: grid;
+  margin-left: 389px;
+  max-width: 1143px;
+  max-height: 841px;
+  grid-template: repeat(6, 126px) / repeat(3, 1fr);
+  gap: 17px;
+  margin-bottom: 50px;
+}
+
+.workout-date-title {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.workout-date {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-top: 13px;
+}
+
+.block-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.functional-training {
+  max-width: 367px;
+  height: 250px;
+  border: 1px solid #2b3541;
+}
+
+.functional-training-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.functional-training-image {
+  padding-left: 31px;
+  padding-top: 57px;
+}
+
+.functional-training-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+  padding-bottom: 25px;
+}
+
+.functional-training-description {
+  display: none;
+}
+
+.functional-training:hover .functional-training-image {
+  display: block;
+  padding-left: 31px;
+  padding-top: 5px;
+  transition: 0.5s ease;
+}
+
+.functional-training:hover .functional-training-description {
+  display: block;
+  padding-left: 31px;
+  padding-bottom: 10px;
+}
+
+.workout-item:first-child {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.power-mix {
+  height: 433px;
+  max-width: 367px;
+  border: 1px solid #2b3541;
+}
+
+.power-mix-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.power-mix-image {
+  padding-left: 31px;
+  padding-top: 197px;
+}
+
+.power-mix-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.power-mix-description {
+  display: none;
+}
+
+.power-mix:hover .power-mix-description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.power-mix:hover .power-mix-image {
+  padding-left: 31px;
+  padding-top: 80px;
+  transition: 0.5s ease;
+}
+
+.block-center {
+  grid-column: 2 / 3;
+  grid-row: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+}
+
+.body-sculpt {
+  max-width: 366px;
+  height: 402px;
+  border: 1px solid #2b3541;
+}
+
+.body-sculpt-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.body-sculpt-image {
+  padding-left: 28px;
+  padding-top: 189px;
+}
+
+.body-sculpt-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.body-sculpt-description {
+  display: none;
+}
+
+.body-sculpt:hover .body-sculpt-description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.body-sculpt:hover .body-sculpt-image {
+  padding-left: 28px;
+  padding-top: 80px;
+  transition: 0.5s ease;
+}
+
+.breathing-practices {
+  max-width: 366px;
+  height: 281px;
+  border: 1px solid #2b3541;
+}
+
+.breathing-practices-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.breathing-practices-image {
+  padding-left: 28px;
+  padding-top: 92px;
+}
+
+.breathing-practices-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.breathing-practices-description {
+  display: none;
+}
+
+.breathing-practices:hover .breathing-practices-description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.breathing-practices:hover .breathing-practices-image {
+  padding-left: 28px;
+  padding-top: 5px;
+  transition: 0.5s ease;
+}
+
+.block-right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+}
+
+.lab-practices {
+  max-width: 367px;
+  height: 309px;
+  border: 1px solid #2b3541;
+}
+
+.lab-practices-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.lab-practices-image {
+  padding-left: 28px;
+  padding-top: 131px;
+}
+
+.lab-practices-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.lab-practices-description {
+  display: none;
+}
+
+.lab-practices:hover .lab-practices-description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.lab-practices:hover .lab-practices-image {
+  padding-left: 28px;
+  padding-top: 45px;
+  transition: 0.5s ease;
+}
+
+.complex-warm-up {
+  max-width: 367px;
+  height: 374px;
+  border: 1px solid #2b3541;
+}
+
+.complex-warm-up-date {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 22px;
+}
+
+.complex-warm-up-image {
+  padding-left: 28px;
+  padding-top: 180px;
+}
+
+.complex-warm-up-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #2b3541;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.complex-warm-up-description {
+  display: none;
+}
+
+.complex-warm-up:hover .complex-warm-up-description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.complex-warm-up:hover .complex-warm-up-image {
+	padding-left: 28px;
+	padding-top: 90px;
+	transition: 0.5s ease;
+  }
