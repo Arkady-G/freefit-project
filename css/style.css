@@ -341,7 +341,7 @@ header {
 .workout {
   display: grid;
   margin-left: 389px;
-  max-width: 1143px;
+  width: 1143px;
   max-height: 841px;
   grid-template: repeat(6, 126px) / repeat(3, 1fr);
   gap: 17px;
@@ -692,7 +692,7 @@ header {
 }
 
 .subscribe {
-  max-width: 1920px;
+  width: 1920px;
   height: 348px;
   background: #f3f3f3;
   margin-top: 160px;
@@ -700,40 +700,55 @@ header {
 }
 
 .subscribe-block {
-  margin-left: 667px;
+  display: block;
+  max-width: 900px;
+  margin-left: 638px;
+  padding: 30px;
+}
+
+.subscribe-title {
+  position: relative;
+  padding-top: 50px;
 }
 
 .circle {
-	position: absolute;
-  margin-top: 51px;
+  position: absolute;
+  margin-top: 20px;
   margin-left: -59px;
   position: absolute;
 }
 
-.subscribe-title {
-	position: relative;
-  padding-top: 80px;
-}
-
 .subscribe-form {
-  display: grid;
-  grid-template: repeat(2, 100px) / repeat(2, 400px);
-  justify-content: center;
-  align-items: center;
-  margin-right: 487px;
-  padding-top: 22px;
+  width: 610px;
 }
 
 .subscribe-input {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding-left: 21px;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  margin-left: -9px;
 }
 
-.subscribe-submit {
-  grid-column: 2 / 3;
-  grid-row: 1 / 1;
-  padding-left: 10px;
+.subscribe-input .label-email {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+  opacity: 0.3;
+}
+
+.input-email {
+  position: relative;
+  height: 65px;
+  width: 372px;
+  margin-top: 29px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: none;
+  outline: none;
 }
 
 .subscribe-submit .btn-default {
@@ -741,24 +756,23 @@ header {
   height: 65px;
 }
 
-.input-email {
-  height: 65px;
-  width: 372px;
-  padding-left: 16px;
-  background: #ffffff;
-  border: none;
-  outline: none;
+.subscribe-submit {
+  padding-top: 30px;
+  padding-left: 21px;
+}
+
+.agreement {
+  color: rgba(43, 53, 65, 0.5);
+  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
 }
 
 .confirm-data {
-  position: relative;
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
+  position: absolute;
   font-size: 11px;
   line-height: 150%;
   color: rgba(43, 53, 65, 0.5);
-  margin-top: -94px;
-  padding-left: 41px;
+  margin-top: 6px;
+  padding-left: 15px;
   border-bottom: 1px solid transparent;
 }
 
@@ -779,9 +793,10 @@ header {
   box-sizing: border-box;
 }
 
-.agreement {
-  color: rgba(43, 53, 65, 0.5);
-  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
+.check-data:checked + .check-style {
+  width: 18px;
+  height: 18px;
+  background-image: url(../icons/checkbox_on.svg);
 }
 
 .agreement:hover {
@@ -789,8 +804,9 @@ header {
   border-bottom: 1px solid rgba(43, 53, 65, 1);
 }
 
-.check-data:checked + .check-style {
-  width: 18px;
-  height: 18px;
-  background-image: url(../icons/checkbox_on.svg);
+.requirements {
+  margin-left: -9px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ae0303;
 }

@@ -213,28 +213,33 @@
     </section>
     <section class="subscribe">
       <div class="subscribe-block">
-		<img class="circle" src="img/circle.svg" alt="" />
+        <img class="circle" src="img/circle.svg" alt="" />
         <div class="subscribe-title">
           <h2>Подпишитесь на рассылку</h2>
         </div>
         <form class="subscribe-form" action="#" method="POST">
           <div class="subscribe-input">
             <input
+              required
               class="input-email"
+              id="email"
               type="email"
               name="useremail"
               value=""
-              placeholder="Ваш e-mail"
+              placeholder=" "
             />
+            <label class="label-email" for="email">Ваш e-mail</label>
+            <div class="subscribe-submit">
+              <button class="btn btn-default" type="submit" value="">
+                Подписаться
+              </button>
+            </div>
           </div>
-          <div class="subscribe-submit">
-            <button class="btn btn-default" type="submit" value="">
-              Подписаться
-            </button>
-          </div>
+		  <div class="requirements">Некорректный адрес e-mail</div>
           <div class="confirm-data">
             <label>
               <input
+                required
                 class="check-data"
                 type="checkbox"
                 name="Confirm"
