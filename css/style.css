@@ -724,7 +724,7 @@ header {
 
 .subscribe-input {
   position: relative;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
   margin-left: -9px;
@@ -738,10 +738,10 @@ header {
   line-height: 150%;
   color: #2b3541;
   opacity: 0.3;
+  z-index: 1;
 }
 
-.input-email {
-  position: relative;
+.field-input {
   height: 65px;
   width: 372px;
   margin-top: 29px;
@@ -749,6 +749,24 @@ header {
   background: #ffffff;
   border: none;
   outline: none;
+  z-index: 0;
+}
+
+.input-email {
+  position: relative;
+  height: 65px;
+  width: 372px;
+  margin-top: 0;
+  margin-left: 4px;
+  background: transparent;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+/* .input-email:focus .label-email, */
+.input-email:not(:placeholder-shown) ~ .label-email {
+  display: none;
 }
 
 .subscribe-submit .btn-default {
@@ -771,7 +789,7 @@ header {
   font-size: 11px;
   line-height: 150%;
   color: rgba(43, 53, 65, 0.5);
-  margin-top: 6px;
+  margin-top: 12px;
   padding-left: 15px;
   border-bottom: 1px solid transparent;
 }
@@ -805,7 +823,8 @@ header {
 }
 
 .requirements {
-  margin-left: -9px;
+  display: none;
+  margin-left: -8px;
   font-size: 14px;
   line-height: 150%;
   color: #ae0303;

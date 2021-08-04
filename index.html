@@ -217,25 +217,27 @@
         <div class="subscribe-title">
           <h2>Подпишитесь на рассылку</h2>
         </div>
-        <form class="subscribe-form" action="#" method="POST">
+        <form class="subscribe-form" id="form" action="#" method="POST">
           <div class="subscribe-input">
-            <input
-              required
-              class="input-email"
-              id="email"
-              type="email"
-              name="useremail"
-              value=""
-              placeholder=" "
-            />
-            <label class="label-email" for="email">Ваш e-mail</label>
+            <div class="field-input">
+              <input
+                required
+                class="input-email"
+                id="email"
+                type="text"
+                name="useremail"
+                value=""
+                placeholder=" "
+              />
+              <label class="label-email" for="email">Ваш e-mail</label>
+            </div>
             <div class="subscribe-submit">
               <button class="btn btn-default" type="submit" value="">
                 Подписаться
               </button>
             </div>
           </div>
-		  <div class="requirements">Некорректный адрес e-mail</div>
+          <div class="requirements">Некорректный адрес e-mail</div>
           <div class="confirm-data">
             <label>
               <input
