@@ -692,7 +692,7 @@ header {
 }
 
 .subscribe {
-  width: 1840px;
+  min-width: 1900px;
   height: 348px;
   background: #f3f3f3;
   margin-top: 160px;
@@ -957,7 +957,7 @@ header {
 }
 
 .container-footer {
-  min-width: 1855px;
+  min-width: 1900px;
   height: 149px;
   background: #f3f3f3;
   margin-top: 170px;
