@@ -221,8 +221,7 @@
           <div class="subscribe-input">
             <div class="field-input">
               <input
-                required
-                class="input-email"
+                class="input-email _req _email"
                 id="email"
                 type="text"
                 name="useremail"
@@ -238,21 +237,20 @@
             </div>
           </div>
           <div class="requirements">Некорректный адрес e-mail</div>
-          <div class="confirm-data">
-            <label>
-              <input
-                required
-                class="check-data"
-                type="checkbox"
-                name="Confirm"
-                value=""
-              /><span class="check-style"></span>Согласен с обработкой
-              <span><a class="agreement" href="#">персональных данных</a></span>
-            </label>
+          <div class="confirm-data"></div>
+            <input
+			  id="formAgreement"
+              class="checkbox-input _req"
+              type="checkbox"
+              name="agreement"
+              value=""
+            />
+            <label for="formAgreement" class="checkbox-label checkbox-on checkbox-off"><span class="agreement-style">Согласен с обработкой <a href="#">персональных данных</a></span></label>
           </div>
         </form>
       </div>
     </section>
     <footer></footer>
+	<script src="js/script.js"></script>
   </body>
 </html>
