@@ -9,44 +9,50 @@
     <title>FreeFit</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <a href="#" class="logo">
-          <img src="logo.svg" alt="Logo" />
-        </a>
-        <nav>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Мероприятия</a>
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <div id="fixed" class="fixed"></div>
+          <a href="#" class="logo">
+            <img src="logo.svg" alt="Logo" />
+          </a>
+
+          <nav>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Мероприятия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#workout">Расписание</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="nav social">
+            <li class="social-item">
+              <a href="#" class="social-link"
+                ><img
+                  class="animate-social-item"
+                  src="icons/in.svg"
+                  alt="Instagram"
+              /></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Расписание</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">О компании</a>
+            <li class="social-item">
+              <a href="#" class="social-link"
+                ><img
+                  class="animate-social-item"
+                  src="icons/fb.svg"
+                  alt="Facebook"
+              /></a>
             </li>
           </ul>
-        </nav>
-        <ul class="nav social">
-          <li class="social-item">
-            <a href="#" class="social-link"
-              ><img
-                class="animate-social-item"
-                src="icons/in.svg"
-                alt="Instagram"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link"
-              ><img
-                class="animate-social-item"
-                src="icons/fb.svg"
-                alt="Facebook"
-            /></a>
-          </li>
-        </ul>
-      </header>
-      <main>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
         <div class="main">
           <div class="learn-more">
             <h1 class="learn-more-title">
@@ -62,7 +68,7 @@
               </form>
             </div>
             <div class="arrow-scroll-down">
-              <a class="arrow-icon" href="#">
+              <a class="arrow-icon" href="#events">
                 <img src="icons/arrow.svg" alt="Scroll down" />
               </a>
             </div>
@@ -71,14 +77,19 @@
             <img src="img/image_main.png" alt="FreeFit" />
           </div>
         </div>
-      </main>
-      <section>
+      </div>
+    </main>
+    <section id="events">
+      <div class="wrapper">
         <div class="events">
           <h2 class="upcoming-title">Ближайшие события</h2>
           <div class="events-item gradirent-item">
             <p class="events-date">29.06 - 4.07</p>
             <h3 class="events-title">Марафон выносливости</h3>
-            <form class="form-events-item" action="#">
+            <form
+              class="form-events-item popup-link"
+              action="#popup-endurance-maraphon"
+            >
               <button class="btn btn-events-item">Учавствовать</button>
             </form>
             <img src="img/maraphon.png" alt="Марафон" />
@@ -89,7 +100,10 @@
           <div class="events-item gradirent-item">
             <p class="events-date">9.07</p>
             <h3 class="events-title">Как стать<br />тренером?</h3>
-            <form class="form-events-item" action="#">
+            <form
+              class="form-events-item popup-link"
+              action="#popup-how-become-coach"
+            >
               <button class="btn btn-events-item">Учавствовать</button>
             </form>
             <img src="img/vebinar_1.png" alt="Вебинар 1" />
@@ -100,7 +114,10 @@
           <div class="events-item gradirent-item">
             <p class="events-date">15.07</p>
             <h3 class="events-title">Йога, как стиль жизни</h3>
-            <form class="form-events-item" action="#">
+            <form
+              class="form-events-item popup-link"
+              action="#popup-yoga-lifestyle"
+            >
               <button class="btn btn-events-item">Учавствовать</button>
             </form>
             <img src="img/vebinar_2.png" alt="Вебинар 2" />
@@ -109,8 +126,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <section>
+      </div>
+    </section>
+    <section id="workout">
+      <div class="wrapper">
         <div class="workout">
           <div class="workout-date-title">
             <h2 class="workout-title">Расписание<br />тренировок</h2>
@@ -211,56 +230,58 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
-	<section class="subscribe">
-        <div class="subscribe-block">
-          <img class="circle" src="img/circle.svg" alt="" />
-          <div class="subscribe-title">
-            <h2>Подпишитесь на рассылку</h2>
-          </div>
-          <form class="subscribe-form" id="form" action="#" method="POST">
-            <div class="subscribe-input">
-              <div class="field-input">
-                <input
-                  class="input-email _req _email"
-                  id="email"
-                  type="text"
-                  name="useremail"
-                  value=""
-                  placeholder=" "
-                />
-                <label class="label-email" for="email">Ваш e-mail</label>
-              </div>
-              <div class="subscribe-submit">
-                <button class="btn btn-default" type="submit" value="">
-                  Подписаться
-                </button>
-              </div>
-            </div>
-            <div class="requirements">Некорректный адрес e-mail</div>
-            <div class="confirm-data">
-              <input
-                id="formAgreement"
-                class="checkbox-input _req"
-                type="checkbox"
-                name="agreement"
-                value=""
-              />
-              <label
-                for="formAgreement"
-                class="checkbox-label checkbox-on checkbox-off"
-                ><span class="agreement-style"
-                  >Согласен с обработкой
-                  <a href="#">персональных данных</a></span
-                ></label
-              >
-            </div>
-          </form>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe-block">
+        <img class="circle" src="img/circle.svg" alt="" />
+        <div class="subscribe-title">
+          <h2>Подпишитесь на рассылку</h2>
         </div>
-      </section>
-    <div class="wrapper">
-      <section>
+        <form class="subscribe-form" id="form" action="#" method="POST">
+          <div class="subscribe-input">
+            <div class="field-input">
+              <input
+                class="input-email _req _email"
+                id="email"
+                type="text"
+                name="useremail"
+                value=""
+                placeholder=" "
+              />
+              <label class="label-email" for="email">Ваш e-mail</label>
+            </div>
+            <div class="subscribe-submit">
+              <button class="btn btn-default" type="submit" value="">
+                Подписаться
+              </button>
+            </div>
+          </div>
+          <div class="requirements">Некорректный адрес e-mail</div>
+          <div class="confirm-data">
+            <input
+              id="formAgreement"
+              class="checkbox-input _req"
+              type="checkbox"
+              name="agreement"
+              value=""
+            />
+            <label
+              for="formAgreement"
+              class="checkbox-label checkbox-on checkbox-off"
+              ><span class="agreement-style"
+                >Согласен с обработкой
+                <a class="agreement-style-link" href="#"
+                  >персональных данных</a
+                ></span
+              ></label
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrapper">
         <div class="about">
           <h2 class="about-title">О компании</h2>
           <div class="about-description">
@@ -313,8 +334,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <footer>
       <div class="container-footer">
         <div class="footer">
@@ -322,13 +343,13 @@
           <nav class="nav-footer">
             <ul class="nav-list-footer">
               <li class="nav-item-footer">
-                <a class="nav-link-footer" href="#">Мероприятия</a>
+                <a class="nav-link-footer" href="#events">Мероприятия</a>
               </li>
               <li class="nav-item-footer">
-                <a class="nav-link" href="#">Расписание</a>
+                <a class="nav-link" href="#workout">Расписание</a>
               </li>
               <li class="nav-item-footer">
-                <a class="nav-link" href="#">О компании</a>
+                <a class="nav-link" href="#about">О компании</a>
               </li>
             </ul>
           </nav>
@@ -366,6 +387,204 @@
         </div>
       </div>
     </footer>
+    <div id="popup-endurance-maraphon" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a class="close-popup" href="#fixed"
+            ><img class="popup-close-img" src="img/close-popup.svg" alt=""
+          /></a>
+          <h3 id="endurance-marathon" class="popup-title">
+            Заявка на участие<br />«Марафон выносливости»
+          </h3>
+          <img class="circle-popup" src="img/circle-popup.svg" alt="" />
+
+          <div class="popup-description">
+            Заполните все поля, и мы пришлем<br />информацию в ближайшее время
+          </div>
+          <form
+            class="popup-form"
+            id="popup-form-endurance-marathon"
+            action="#"
+            method="POST"
+          >
+            <div class="popup-input">
+              <div class="popup-field-input-email">
+                <input
+                  class="popup-input-email _req _email"
+                  id="popup-email-endurance-marathon"
+                  type="text"
+                  name="userpopupemail"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-email"
+                  for="popup-email-endurance-marathon"
+                  >Ваш e-mail</label
+                >
+              </div>
+              <div class="popup-requirements-email">
+                Некорректный адрес e-mail
+              </div>
+              <div class="popup-field-input-phone">
+                <input
+                  class="popup-input-phone _req _phone"
+                  id="popup-phone-endurance-marathon"
+                  type="text"
+                  name="userpopupphone"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-phone"
+                  for="popup-phone-endurance-marathon"
+                  >Ваш номер телефона</label
+                >
+              </div>
+              <div class="popup-requirements-phone">
+                Некорректный номер телефона
+              </div>
+              <div class="popup-submit">
+                <button class="btn btn-default" type="submit" value="">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="popup-how-become-coach" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a class="close-popup" href="#fixed"
+            ><img class="popup-close-img" src="img/close-popup.svg" alt=""
+          /></a>
+          <h3 id="how-become-coach" class="popup-title">Как стать тренером?</h3>
+          <img class="circle-popup" src="img/circle-popup.svg" alt="" />
+
+          <div class="popup-description">
+            Заполните все поля, и мы пришлем<br />информацию в ближайшее время
+          </div>
+          <form
+            class="popup-form"
+            id="popup-form-how-become-coach"
+            action="#"
+            method="POST"
+          >
+            <div class="popup-input">
+              <div class="popup-field-input-email">
+                <input
+                  class="popup-input-email _req _email"
+                  id="popup-email-how-become-coach"
+                  type="text"
+                  name="userpopupemail"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-email"
+                  for="popup-email-how-become-coach"
+                  >Ваш e-mail</label
+                >
+              </div>
+              <div class="popup-requirements-email">
+                Некорректный адрес e-mail
+              </div>
+              <div class="popup-field-input-phone">
+                <input
+                  class="popup-input-phone _req _phone"
+                  id="popup-phone-how-become-coach"
+                  type="text"
+                  name="userpopupphone"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-phone"
+                  for="popup-phone-how-become-coach"
+                  >Ваш номер телефона</label
+                >
+              </div>
+              <div class="popup-requirements-phone">
+                Некорректный номер телефона
+              </div>
+              <div class="popup-submit">
+                <button class="btn btn-default" type="submit" value="">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="popup-yoga-lifestyle" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a class="close-popup" href="#fixed"
+            ><img class="popup-close-img" src="img/close-popup.svg" alt=""
+          /></a>
+          <h3 id="yoga-lifestyle" class="popup-title">Йога, как стиль жизни</h3>
+          <img class="circle-popup" src="img/circle-popup.svg" alt="" />
+
+          <div class="popup-description">
+            Заполните все поля, и мы пришлем<br />информацию в ближайшее время
+          </div>
+          <form
+            class="popup-form"
+            id="popup-form-yoga-lifestyle"
+            action="#"
+            method="POST"
+          >
+            <div class="popup-input">
+              <div class="popup-field-input-email">
+                <input
+                  class="popup-input-email _req _email"
+                  id="popup-email-yoga-lifestyle"
+                  type="text"
+                  name="userpopupemail"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-email"
+                  for="popup-email-yoga-lifestyle"
+                  >Ваш e-mail</label
+                >
+              </div>
+              <div class="popup-requirements-email">
+                Некорректный адрес e-mail
+              </div>
+              <div class="popup-field-input-phone">
+                <input
+                  class="popup-input-phone _req _phone"
+                  id="popup-phone-yoga-lifestyle"
+                  type="text"
+                  name="userpopupphone"
+                  value=""
+                  placeholder=" "
+                />
+                <label
+                  class="popup-label-phone"
+                  for="popup-phone-yoga-lifestyle"
+                  >Ваш номер телефона</label
+                >
+              </div>
+              <div class="popup-requirements-phone">
+                Некорректный номер телефона
+              </div>
+              <div class="popup-submit">
+                <button class="btn btn-default" type="submit" value="">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
   </body>
 </html>
