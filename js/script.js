@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	function formAddError(input) {
 		input.parentElement.classList.add('_error');
 		input.classList.add('_error');
-		let requirements = document.querySelector('.requirements');
-		requirements.style.color = '#ae0303';
 
 	}
 	function formRemoveError(input) {

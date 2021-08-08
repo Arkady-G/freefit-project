@@ -137,8 +137,8 @@
           </div>
           <div class="block-left">
             <div class="workout-item">
-              <div class="functional-training">
-                <p class="functional-training-date">22 июня, 10:00</p>
+              <div class="functional-training current">
+                <p class="functional-training-date date">9 августа, 10:00</p>
                 <img
                   class="functional-training-image"
                   src="icons/body.svg"
@@ -153,8 +153,8 @@
               </div>
             </div>
             <div class="workout-item">
-              <div class="power-mix">
-                <p class="power-mix-date">23 июня, 10:00</p>
+              <div class="power-mix current">
+                <p class="power-mix-date date">8 августа, 10:00</p>
                 <img
                   class="power-mix-image"
                   src="icons/jump.svg"
@@ -170,8 +170,8 @@
           </div>
           <div class="block-center">
             <div class="workout-item">
-              <div class="body-sculpt">
-                <p class="body-sculpt-date">24 июня, 10:00</p>
+              <div class="body-sculpt current">
+                <p class="body-sculpt-date date">8 августа, 10:00</p>
                 <img
                   class="body-sculpt-image"
                   src="icons/bottle.svg"
@@ -185,8 +185,8 @@
               </div>
             </div>
             <div class="workout-item">
-              <div class="breathing-practices">
-                <p class="breathing-practices-date">25 июня, 10:00</p>
+              <div class="breathing-practices current">
+                <p class="breathing-practices-date date">10 августа, 10:00</p>
                 <img
                   class="breathing-practices-image"
                   src="icons/heart.svg"
@@ -201,8 +201,8 @@
           </div>
           <div class="block-right">
             <div class="workout-item">
-              <div class="lab-practices">
-                <p class="lab-practices-date">26 июня, 10:00</p>
+              <div class="lab-practices current">
+                <p class="lab-practices-date date">11 августа, 10:00</p>
                 <img
                   class="lab-practices-image"
                   src="icons/dumbbell.svg"
@@ -215,8 +215,8 @@
               </div>
             </div>
             <div class="workout-item">
-              <div class="complex-warm-up">
-                <p class="complex-warm-up-date">27 июня, 10:00</p>
+              <div class="complex-warm-up current">
+                <p class="complex-warm-up-date date">12 августа, 10:00</p>
                 <img
                   class="complex-warm-up-image"
                   src="icons/weight.svg"
@@ -238,7 +238,7 @@
         <div class="subscribe-title">
           <h2>Подпишитесь на рассылку</h2>
         </div>
-        <form class="subscribe-form" id="form" action="#" method="POST">
+        <form class="subscribe-form" id="form" action="#fixed" method="POST">
           <div class="subscribe-input">
             <div class="field-input">
               <input
@@ -257,7 +257,7 @@
               </button>
             </div>
           </div>
-          <div class="requirements">Некорректный адрес e-mail</div>
+          <div class="requirements _email">Некорректный адрес e-mail</div>
           <div class="confirm-data">
             <input
               id="formAgreement"
@@ -402,7 +402,7 @@
             Заполните все поля, и мы пришлем<br />информацию в ближайшее время
           </div>
           <form
-            class="popup-form"
+            class="popup__form"
             id="popup-form-endurance-marathon"
             action="#"
             method="POST"
@@ -410,7 +410,7 @@
             <div class="popup-input">
               <div class="popup-field-input-email">
                 <input
-                  class="popup-input-email _req _email"
+                  class="popup-input-email _popup_req _popup_email"
                   id="popup-email-endurance-marathon"
                   type="text"
                   name="userpopupemail"
@@ -428,7 +428,7 @@
               </div>
               <div class="popup-field-input-phone">
                 <input
-                  class="popup-input-phone _req _phone"
+                  class="popup-input-phone _popup_req _popup_phone"
                   id="popup-phone-endurance-marathon"
                   type="text"
                   name="userpopupphone"
@@ -467,7 +467,7 @@
             Заполните все поля, и мы пришлем<br />информацию в ближайшее время
           </div>
           <form
-            class="popup-form"
+            class="popup__form"
             id="popup-form-how-become-coach"
             action="#"
             method="POST"
@@ -532,7 +532,7 @@
             Заполните все поля, и мы пришлем<br />информацию в ближайшее время
           </div>
           <form
-            class="popup-form"
+            class="popup__form"
             id="popup-form-yoga-lifestyle"
             action="#"
             method="POST"
@@ -586,5 +586,7 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
+    <script src="js/popupscript.js"></script>
+    <script src="js/script-for-workout.js"></script>
   </body>
 </html>

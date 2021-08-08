@@ -763,8 +763,8 @@ button {
 }
 
 /* .field-input:hover {
-	background: #F3F3F3;
-} */
+	  background: #F3F3F3;
+  } */
 
 .input-email {
   position: relative;
@@ -884,8 +884,8 @@ button {
 }
 
 /* .requirements {
-  color: #ae0303;
-} color меняется в script.js */
+	color: #ae0303;
+  } color меняется в script.js */
 
 .about {
   display: grid;
@@ -1122,14 +1122,13 @@ button {
 }
 
 /* .popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup:target .popup-content {
-  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
-  opacity: 1;
-} */
+	opacity: 1;
+	visibility: visible;
+  }
+  .popup:target .popup-content {
+	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+	opacity: 1;
+  } */
 
 .popup.open {
   opacity: 1;
@@ -1194,7 +1193,7 @@ button {
   color: #2b3541;
 }
 
-.popup-form {
+.popup__form {
   width: 600px;
   height: 375px;
 }
@@ -1228,8 +1227,8 @@ button {
 }
 
 /* .field-input:hover {
-	  background: #F3F3F3;
-  } */
+		background: #F3F3F3;
+	} */
 
 .popup-input-email {
   position: relative;
@@ -1260,7 +1259,7 @@ button {
   color: transparent;
 }
 
-.pop-input-email._error {
+.pop-input-email._error_email {
   border: 1px solid #ae0303;
 }
 
@@ -1287,8 +1286,8 @@ button {
 }
 
 /* .field-input:hover {
-	  background: #F3F3F3;
-  } */
+		background: #F3F3F3;
+	} */
 
 .popup-input-phone {
   position: relative;
@@ -1319,7 +1318,7 @@ button {
   color: transparent;
 }
 
-.pop-input-phone._error {
+.pop-input-phone._error_phone {
   border: 1px solid #ae0303;
 }
 
